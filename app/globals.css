@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components{
+    .dropdown {
+        @apply flex-col gap-4 min-w-max lg:w-[250px] mt-2 lg:mt-0 bg-white dark:bg-black border border-stroke dark:border-strokedark shadow-solid-13 ease-in duration-300 px-8 py-5 rounded-md -left-7.5 hidden
+        lg:translate-y-10 lg:opacity-0 lg:invisible lg:absolute lg:flex
+        lg:before:absolute lg:before:-top-1.5 lg:before:left-10 lg:before:w-3 lg:before:h-3 lg:before:border-l lg:before:border-t lg:before:border-stroke lg:dark:before:border-strokedark lg:before:bg-white lg:dark:before:bg-black lg:before:rotate-45
+        lg:group-hover:translate-y-6.5 lg:group-hover:opacity-100 lg:group-hover:visible;
+    }
+}

@@ -1,4 +1,3 @@
-
 const menuData = [
     {
         id: 1,
@@ -10,7 +9,7 @@ const menuData = [
         id: 2,
         title: "Services",
         newTab: false,
-        subMenu: [
+        submenu: [
             {
                 id: 21,
                 title: "Web Development",

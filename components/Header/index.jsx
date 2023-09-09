@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import ThemeToggler from "./ThemeToggler";
@@ -35,9 +35,9 @@ export default function Header() {
     >
       <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0 lg:flex justify-between items-center relative">
         <div className="w-full lg:w-1/4 flex items-center justify-between">
-          <a href="/" className="font-bold text-2xl md:text-2xl">
+          <a href="/" className="font-bold text-2xl">
             {/*we will be entering the dark and light logos here moving forward*/}
-            SJ Development
+            <span className="bg-primary text-white p-2 rounded-lg">SJ</span>{' '}<span className=""> Development</span>
           </a>
 
           <button
@@ -70,7 +70,7 @@ export default function Header() {
                   }`}
                 ></span>
                 <span
-                  className={`block bg-black dark:bg-white rounded-sm ease-in-out duration-200 delay-400 absolute left-0 top-[.03rem] w-full h-0 ${
+                  className={`block bg-black dark:bg-white rounded-sm ease-in-out duration-200 delay-400 absolute left-0 top-2.5 w-full h-0 ${
                     navigationOpen ? "h-0.5 dealy-200" : ""
                   }`}
                 ></span>
@@ -94,7 +94,7 @@ export default function Header() {
                     <>
                       <a
                         onClick={() => setDropdownToggler(!dropdownToggler)}
-                        className="hover:text-primary flex items-center justify-between gap-3 cursor-pointer"
+                        className="hover:text-primary flex items-center justify-between gap-3 cursor-pointer font-bold"
                       >
                         {menuItem.title}
                         <span>
@@ -112,7 +112,7 @@ export default function Header() {
                         className={`dropdown ${dropdownToggler ? "flex" : ""}`}
                       >
                         {menuItem.submenu.map((item, key) => (
-                          <li key={key} className="hover:text-primary">
+                          <li key={key} className="hover:text-primary font-bold">
                             <Link href={item.path || "#"}>{item.title}</Link>
                           </li>
                         ))}
@@ -123,8 +123,8 @@ export default function Header() {
                       href={`${menuItem.path}`}
                       className={
                         pathUrl === menuItem.path
-                          ? "hover:text-primary text-primary"
-                          : "hover:text-primary"
+                          ? "hover:text-primary text-primary font-bold"
+                          : "hover:text-primary font-bold"
                       }
                     >
                       {menuItem.title}
@@ -140,9 +140,9 @@ export default function Header() {
 
             <Link
               href="#"
-              className="flex items-center justify-center bg-primary hover:bg-primaryho ease-in-out duration-300 text-white text-regular rounded-full py-2.5 px-7.5"
+              className="flex items-center justify-center bg-primary hover:bg-primaryho ease-in-out duration-300 text-white text-regular rounded-full py-2.5 px-7.5 font-bold"
             >
-              Get Quote
+              Try Shopify Free
             </Link>
           </div>
         </div>

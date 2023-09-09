@@ -7,7 +7,7 @@ export default function ThemeToggler(){
     return(
         <button aria-label="theme-toggler"
                 onClick={()=> setTheme(theme === "dark" ? "light" : "dark")}
-                className="bg-gray-2 dark:bg-dark-bg flex cursor-pointer items-center justify-center rounded-full text-black dark:text-white mr-1.5 absolute lg:static right-17"
+                className="bg-gray-2 dark:bg-dark-bg flex cursor-pointer items-center justify-center rounded-full text-black dark:text-white mr-1.5 absolute lg:static right-17 font-bold"
         >
             <Image src="/images/icons/icon-moon.svg"
                    alt="dark-logo"

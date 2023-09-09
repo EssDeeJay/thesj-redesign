@@ -136,6 +136,10 @@ module.exports = {
       zumthor: "#EDF5FF",
       socialicon: "#D1D8E0",
 
+    },
+    fontFamily: {
+      nunito: ["Nunito", "sans-serif"],
+      playfair : ["Playfair Display", "serif"]
     }
   },
   plugins: [],

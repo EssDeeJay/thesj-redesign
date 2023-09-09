@@ -1,7 +1,6 @@
 "use client";
 
 import React, {useEffect, useRef, useState } from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 const squareData = [
@@ -122,18 +121,18 @@ const ShuffleGrid = () => {
 
 export default function Hero(){
     return(
-        <section className="w-full pt-35 md:pt-40 xl:pt-46 pb-20 xl:pb-25 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-c-1390 mx-auto">
+        <section className="w-full pt-35 md:pt-40 xl:pt-46 pb-20 xl:pb-25 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-c-1390 mx-auto px-4 md:px-8 2xl:px-0">
             <div>
-                <span className="block mb-4 text-xs md:text-sm text-black dark:text-white font-medium">
-                  🔥 Create a Killer Shopify Site
+                <span className="block mb-4 text-sm md:text-lg text-black dark:text-white font-medium">
+                  🔥 We Build Slick Shopify Stores
                 </span>
-                <h1 className="text-4xl md:text-6xl font-semibold">
+                <h1 className="block text-3xl md:text-5xl font-semibold tracking-wide md:leading-[56px]">
                     Expert Shopify Developers to take your Shopify Store to Next Level
                 </h1>
                 <p className="text-base md:text-lg text-black dark:text-white my-4 md:my-6">
-                    We help you to create / redesign your shopify site that your customers will love to shop.
+                    We help you to create / redesign your shopify site that look great and perform even better.
                 </p>
-                <button className="bg-primary text-white font-medium py-2 px-4 rounded transition-all hover:bg-btndark active:scale-95">
+                <button aria-label="Learn More" className="bg-black text-white font-medium transition-all hover:bg-blackho dark:bg-btndark active:scale-95 rounded-full ease-in-out duration-300 px-7.5 py-2.5">
                     Learn More
                 </button>
             </div>

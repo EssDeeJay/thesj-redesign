@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import Brands from "@/components/Brands";
+import Features from "@/components/Features";
 
 export const metadata = {
   title: "Shopify Developers & Experts - The SJ Development",
@@ -10,7 +11,8 @@ export default function Home() {
   return (
     <main>
         <Hero />
-        <Brands />       
+        <Brands />
+        <Features />       
     </main>
   )
 }

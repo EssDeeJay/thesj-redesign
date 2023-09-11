@@ -37,7 +37,7 @@ export default function Header() {
         <div className="w-full lg:w-1/4 flex items-center justify-between">
           <a href="/" className="font-bold text-2xl">
             {/*we will be entering the dark and light logos here moving forward*/}
-            <span className="bg-primary text-white p-2 rounded-lg">SJ</span>{' '}<span className=""> Development</span>
+            <span className="bg-primary text-white p-2 rounded-lg">SJ</span>{' '}<span className="font-extrabold"> Development</span>
           </a>
 
           <button

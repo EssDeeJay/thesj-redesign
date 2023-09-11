@@ -9,7 +9,7 @@ const featuresData = [
       {
         id: 2,
         icon: "/images/icons/icon-02.svg",
-        title: "Clean & Reusable Code Patterns",
+        title: "Clean Code Patterns",
         description:
           "We look at the bigger picture while developing the best solution with best technologies.",
       },

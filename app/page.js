@@ -1,6 +1,10 @@
 import Hero from "@/components/Hero";
 import Brands from "@/components/Brands";
 import Features from "@/components/Features";
+import About from "@/components/About";
+import FeaturesTab from "@/components/FeaturesTab";
+import FunFact from "@/components/FunFact";
+import Integration from "@/components/Integration";
 
 export const metadata = {
   title: "Shopify Developers & Experts - The SJ Development",
@@ -12,7 +16,11 @@ export default function Home() {
     <main>
         <Hero />
         <Brands />
-        <Features />       
+        <Features />
+        <About />
+        <FeaturesTab />   
+        <FunFact />  
+        <Integration />  
     </main>
   )
 }

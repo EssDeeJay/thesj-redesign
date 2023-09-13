@@ -5,6 +5,11 @@ import About from "@/components/About";
 import FeaturesTab from "@/components/FeaturesTab";
 import FunFact from "@/components/FunFact";
 import Integration from "@/components/Integration";
+import CTA from "@/components/CTA";
+import FAQ from "@/components/FAQ";
+import Testimonial from "@/components/Testimonial";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Shopify Developers & Experts - The SJ Development",
@@ -21,6 +26,11 @@ export default function Home() {
         <FeaturesTab />   
         <FunFact />  
         <Integration />  
+        <CTA />
+        <FAQ />
+        <Testimonial />
+        <Contact />
+        <Footer />
     </main>
   )
 }

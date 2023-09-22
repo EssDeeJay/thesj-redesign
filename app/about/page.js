@@ -1,4 +1,7 @@
-import TextGenerate from "@/components/TextGenerate"
+import TextGenerate from "@/components/TextGenerate";
+import Stats from "@/components/Stats";
+import Team from "@/components/Team";
+import Story from "@/components/Story";
 
 export const metadata = {
     title: "About Us - The SJ Development | Professional Shopify Developers",
@@ -9,6 +12,9 @@ export default function AboutUs(){
     return(
         <main>
             <TextGenerate />
+            <Stats />
+            <Team />
+            <Story />
         </main>
     )
 }

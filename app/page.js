@@ -9,7 +9,6 @@ import CTA from "@/components/CTA";
 import FAQ from "@/components/FAQ";
 import Testimonial from "@/components/Testimonial";
 import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Shopify Developers & Experts - The SJ Development",
@@ -30,7 +29,6 @@ export default function Home() {
         <FAQ />
         <Testimonial />
         <Contact />
-        <Footer />
     </main>
   )
 }

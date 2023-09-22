@@ -34,11 +34,23 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0 lg:flex justify-between items-center relative">
-        <div className="w-full lg:w-1/4 flex items-center justify-between">
+        <div className="w-full lg:w-1/4 flex items-center justify-between lg:pr-6">
           <a href="/" className="font-bold text-2xl">
             {/*we will be entering the dark and light logos here moving forward*/}
-            <Image src="/images/logo/newsjlogo.svg" className="block dark:hidden" width={234.5} height={53.315} alt="thesjdevelopment logo" />
-            <Image src="/images/logo/newsjlogodark.svg" className="hidden dark:block" width={234.5} height={53.315} alt="thesjdevelopment logo dark" />
+            <Image
+                    width={234.5}
+                    height={53.315}
+                    src="/images/logo/newsjlogo.svg"
+                    alt="logo"
+                    className="dark:hidden"
+                  />
+                  <Image
+                    width={234.5}
+                    height={53.315}
+                    src="/images/logo/newsjlogodark.svg"
+                    alt="logo"
+                    className="hidden dark:block"
+                  />
           </a>
 
           <button

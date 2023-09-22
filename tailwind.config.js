@@ -129,7 +129,7 @@ module.exports = {
       blacksection: "#1C2136",
       primary: "#006BFF",
       primaryho: "#0063EC",
-      meta: "#20C5A8",
+      meta: "#20C5A8", 
       waterloo: "#757693",
       manatee: "#999AA1",
       alabaster: "#FBFBFB",
@@ -138,8 +138,8 @@ module.exports = {
 
     },
     fontFamily: {
-      nunito: ["Nunito", "sans-serif"],
-      playfair : ["Playfair Display", "serif"]
+      archivo: ["Archivo", "sans-serif"],
+      dm_serif_display : ["DM Serif Display", "serif"]
     }
   },
   plugins: [],

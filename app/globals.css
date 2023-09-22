@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,900&family=DM+Serif+Display:ital@0;1&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,10 +6,10 @@
 
 @layer base{
     h1, h2, h3, h4, h5, h6{
-        @apply font-playfair font-bold z-1;
+        @apply font-dm_serif_display font-bold z-1 tracking-wide;
     }
     body{
-        @apply font-nunito font-normal text-regular z-1;
+        @apply font-archivo font-normal text-regular z-1;
     }
 }
 
